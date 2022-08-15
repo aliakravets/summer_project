@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header .nav {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header .nav .nav_close {
+  display: none;
+}
+
+.header .nav .nav_toggle {
+  display: none;
+}
+
+.header .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+}
+
+.header .nav ul li {
+  margin-right: 100px;
+}
+
+.header .nav ul li a {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.header .nav ul li .blog {
+  color: #FF6464;
+}
+
+.main {
+  padding: 35px 149px;
+}
+
+.main h1 {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 60px;
+  color: #21243D;
+  margin-bottom: 35px;
+}
+
+.main ul {
+  list-style-type: none;
+}
+
+.main .frog {
+  padding: 15px;
+  border-bottom: 1px solid #E0E0E0;
+  padding-right: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+}
+
+.main .frog h2 {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 44px;
+  color: #21243D;
+  margin-bottom: 5px;
+}
+
+.main .data {
+  margin-bottom: 15px;
+}
+
+.main .data-text {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #21243D;
+  border-right: 2px solid black;
+  padding-right: 15px;
+  margin-right: 15px;
+}
+
+.main .handlebars {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: lightgrey;
+}
+
+.main .data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .text {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #21243D;
+  margin-bottom: 30px;
+}
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 149px 35px 149px;
+}
+
+.footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer ul li {
+  margin-left: 35px;
+}
+
+.footer ul .fb {
+  margin-left: 0;
+}
+
+.footer p {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #21243D;
+  margin-top: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container .header {
+    padding: 25px;
+  }
+  .container .header .nav_menu {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.1);
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(96px);
+            backdrop-filter: blur(96px);
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .container .header .nav_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    row-gap: 3rem;
+    padding-top: 9rem;
+  }
+  .container .header .nav_link {
+    text-transform: uppercase;
+    color: var(--title-color);
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-medium);
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .container .header .nav_close {
+    font-size: 2rem;
+    color: var(--white-color);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    display: inline;
+  }
+  .container .header .nav_toggle {
+    display: inline;
+  }
+  .container .header .show-menu {
+    right: 0;
+  }
+  .container .header .main-header {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0;
+  }
+  .container .header .main-header .header-text {
+    text-align: center;
+  }
+  .container main {
+    padding: 20px;
+  }
+  .container main ul li h2 {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 38px;
+    color: #21243D;
+  }
+}
+/*# sourceMappingURL=blog.css.map */
