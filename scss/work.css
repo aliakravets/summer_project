@@ -13,6 +13,14 @@
           justify-content: flex-end;
 }
 
+.header .nav .nav_close {
+  display: none;
+}
+
+.header .nav .nav_toggle {
+  display: none;
+}
+
 .header .nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
